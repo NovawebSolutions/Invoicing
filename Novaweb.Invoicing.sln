@@ -12,6 +12,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "TogglImporter", "src\TogglImporter\TogglImporter.xproj", "{5D64A93E-9FB6-4BFD-9962-79C8F36FF3A6}"
 EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Novaweb.Invoicing.UI", "src\Novaweb.Invoicing.UI\Novaweb.Invoicing.UI.xproj", "{579F8CBB-3F5A-4C3C-8271-DFF4FBC11F7A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -22,11 +24,16 @@ Global
 		{5D64A93E-9FB6-4BFD-9962-79C8F36FF3A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5D64A93E-9FB6-4BFD-9962-79C8F36FF3A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5D64A93E-9FB6-4BFD-9962-79C8F36FF3A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{579F8CBB-3F5A-4C3C-8271-DFF4FBC11F7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{579F8CBB-3F5A-4C3C-8271-DFF4FBC11F7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{579F8CBB-3F5A-4C3C-8271-DFF4FBC11F7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{579F8CBB-3F5A-4C3C-8271-DFF4FBC11F7A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{5D64A93E-9FB6-4BFD-9962-79C8F36FF3A6} = {A7CD0414-CC9E-499A-B44E-2C6D1217548E}
+		{579F8CBB-3F5A-4C3C-8271-DFF4FBC11F7A} = {A7CD0414-CC9E-499A-B44E-2C6D1217548E}
 	EndGlobalSection
 EndGlobal
