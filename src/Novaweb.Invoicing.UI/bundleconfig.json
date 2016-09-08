@@ -7,18 +7,5 @@
     "inputFiles": [
       "wwwroot/css/site.css"
     ]
-  },
-  {
-    "outputFileName": "wwwroot/js/all.min.js",
-    "inputFiles": [
-      "wwwroot/js/*.js"
-    ],
-    // Optionally specify minification options
-    "minify": {
-      "enabled": true,
-      "renameLocals": true
-    },
-    // Optinally generate .map file
-    "sourceMap": false
   }
 ]

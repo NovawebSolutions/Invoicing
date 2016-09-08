@@ -46,12 +46,7 @@
     <environment names="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>
         <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
-        <script src="~/lib/angular/angular.js"></script>
-        <script src="~/lib/auth0-lock/build/lock.js"></script>
-        <script src="~/lib/angular-lock/dist/angular-lock.js"></script>
-        <script src="~/lib/angular-jwt/dist/angular-jwt.js"></script>
-        <script src="~/lib/angular-route/angular-route.js"></script>
-        <script src="~/js/all.min.js" asp-append-version="true"></script>
+        <script src="~/dist/app.min.js"></script>
     </environment>
     <environment names="Staging,Production">
         <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"
@@ -62,12 +57,7 @@
                 asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
                 asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal">
         </script>
-        <script src="~/lib/angular/angular.min.js"></script>
-        <script src="~/lib/auth0-lock/build/lock.min.js"></script>
-        <script src="~/lib/angular-lock/dist/angular-lock.min.js"></script>
-        <script src="~/lib/angular-jwt/dist/angular-jwt.min.js"></script>
-        <script src="~/lib/angular-route/angular-route.min.js"></script>
-        <script src="~/js/all.min.js" asp-append-version="true"></script>
+        <script src="~/dist/app.min.js" asp-append-version="true"></script>
     </environment>
 
     @RenderSection("scripts", required: false)
