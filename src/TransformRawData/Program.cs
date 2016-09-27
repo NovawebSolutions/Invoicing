@@ -29,7 +29,7 @@ namespace TransformRawData
             await storage.InitializeAsync();
 
             Console.WriteLine("Syncing clients to table storage...");
-            storage.SyncClientsToTableStorage();
+            await storage.SyncClientsToTableStorage("Novaweb");
         }
     }
 }
