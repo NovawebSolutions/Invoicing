@@ -1,7 +1,7 @@
 using System;
 using Newtonsoft.Json;
 
-namespace TogglImporter.Model
+namespace TogglModel
 {
     public class TimeEntry
     {

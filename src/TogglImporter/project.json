@@ -1,5 +1,8 @@
 {
-  "version": "1.0.0-*",
+  "version": "1.0.0",
+  "runtimes": {
+    "win10-x64": {}
+  },
   "buildOptions": {
     "emitEntryPoint": true,
     "copyToOutput": {
@@ -20,13 +23,11 @@
     "Microsoft.Extensions.Configuration.CommandLine": "1.0.0",
     "Microsoft.Extensions.Configuration.Json": "1.0.0",
     "Microsoft.Extensions.PlatformAbstractions": "1.0.0",
-    "Microsoft.NETCore.App": {
-      "type": "platform",
-      "version": "1.0.0"
-    },
+    "Microsoft.NETCore.App": "1.0.1",
     "Newtonsoft.Json": "9.0.1",
     "System.Net.Http": "4.1.0",
-    "WindowsAzure.Storage": "7.2.0"
+    "TogglModel": "1.0.0", 
+    "WindowsAzure.Storage": "7.2.1"
   },
 
   "frameworks": {

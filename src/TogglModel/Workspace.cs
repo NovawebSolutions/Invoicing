@@ -1,6 +1,6 @@
 using System;
 
-namespace TogglImporter.Model
+namespace TogglModel
 {
     public class Workspace
     {
