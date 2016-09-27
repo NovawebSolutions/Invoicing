@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.PlatformAbstractions;
@@ -30,6 +28,12 @@ namespace TransformRawData
 
             Console.WriteLine("Syncing clients to table storage...");
             await storage.SyncClientsToTableStorage("Novaweb");
+
+            Console.WriteLine("Syncing projects to table storage...");
+            await storage.SyncProjectsToTableStorage("Novaweb");
+
+            Console.WriteLine("Syncing time entries to table storage...");
+            await storage.SyncTimeEntriesToTableStorage("Novaweb");
         }
     }
 }
