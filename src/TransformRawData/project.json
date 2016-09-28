@@ -8,14 +8,18 @@
     "copyToOutput": {
       "include": [
         "appsettings.json",
-        "appsettings.production.json"
+        "appsettings.production.json",
+        "run.cmd",
+        "settings.job"
       ]
     }
   },
   "publishOptions": {
     "include": [
       "appsettings.json",
-      "appsettings.production.json"
+      "appsettings.production.json",
+      "run.cmd",
+      "settings.job"
     ]
   },
 

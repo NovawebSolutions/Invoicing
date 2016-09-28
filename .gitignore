@@ -258,3 +258,4 @@ paket-files/
 .cr/
 
 appsettings.production.json
+PublishProfiles/

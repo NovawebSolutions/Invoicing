@@ -5,14 +5,18 @@
     "copyToOutput": {
       "include": [
         "appsettings.json",
-        "appsettings.production.json"
+        "appsettings.production.json",
+        "run.cmd",
+        "settings.job"
       ]
     }
   },
   "publishOptions": {
     "include": [
       "appsettings.json",
-      "appsettings.production.json"
+      "appsettings.production.json",
+      "run.cmd",
+      "settings.job"
     ]
   },
 
@@ -22,7 +26,7 @@
     "Microsoft.Extensions.Configuration.Json": "1.0.0",
     "Microsoft.Extensions.PlatformAbstractions": "1.0.0",
     "WindowsAzure.Storage": "7.2.1",
-    "Invoicing.Model":  "1.0.0", 
+    "Invoicing.Model": "1.0.0",
     "Microsoft.NETCore.App": {
       "type": "platform",
       "version": "1.0.1"

@@ -20,7 +20,10 @@
     "BundlerMinifier.Core": "2.2.281",
     "Microsoft.AspNetCore.Mvc": "1.0.1",
     "Microsoft.AspNetCore.Server.Kestrel": "1.0.1",
-    "Microsoft.NETCore.App": "1.0.1"
+    "Microsoft.NETCore.App": "1.0.1",
+    "GenerateInvoice": "1.0.0-*",
+    "TogglImporter": "1.0.0",
+    "TransformRawData": "1.0.0"
   },
 
   "tools": {
@@ -39,7 +42,9 @@
 
   "buildOptions": {
     "emitEntryPoint": true,
-    "preserveCompilationContext": true
+    "preserveCompilationContext": true,
+    "include": 
+      "app_data/jobs/**/*.*" 
   },
 
   "runtimeOptions": {
@@ -53,13 +58,15 @@
       "wwwroot",
       "Views",
       "Areas/**/Views",
+      "app_data/jobs/**/*.*",
       "appsettings.json",
+      "appsettings.production.json",
       "web.config"
     ]
   },
 
   "scripts": {
-    "prepublish": [ "bower install", "dotnet bundle" ],
+    "prepublish": [ "bower install" ],
     "postpublish": [ "dotnet publish-iis --publish-folder %publish:OutputPath% --framework %publish:FullTargetFramework%" ]
   }
 }

@@ -8,14 +8,18 @@
     "copyToOutput": {
       "include": [
         "appsettings.json",
-        "appsettings.production.json"
+        "appsettings.production.json",
+        "run.cmd",
+        "settings.job"
       ]
     }
   },
   "publishOptions": {
     "include": [
       "appsettings.json",
-      "appsettings.production.json"
+      "appsettings.production.json",
+      "run.cmd",
+      "settings.job"
     ]
   },
   "dependencies": {
@@ -26,7 +30,7 @@
     "Microsoft.NETCore.App": "1.0.1",
     "Newtonsoft.Json": "9.0.1",
     "System.Net.Http": "4.1.0",
-    "TogglModel": "1.0.0", 
+    "TogglModel": "1.0.0",
     "WindowsAzure.Storage": "7.2.1"
   },
 
