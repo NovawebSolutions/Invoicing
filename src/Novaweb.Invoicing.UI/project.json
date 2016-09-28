@@ -20,10 +20,7 @@
     "BundlerMinifier.Core": "2.2.281",
     "Microsoft.AspNetCore.Mvc": "1.0.1",
     "Microsoft.AspNetCore.Server.Kestrel": "1.0.1",
-    "Microsoft.NETCore.App": "1.0.1",
-    "GenerateInvoice": "1.0.0-*",
-    "TogglImporter": "1.0.0",
-    "TransformRawData": "1.0.0"
+    "Microsoft.NETCore.App": "1.0.1"
   },
 
   "tools": {
@@ -43,8 +40,6 @@
   "buildOptions": {
     "emitEntryPoint": true,
     "preserveCompilationContext": true,
-    "include": 
-      "app_data/jobs/**/*.*" 
   },
 
   "runtimeOptions": {
@@ -67,6 +62,9 @@
 
   "scripts": {
     "prepublish": [ "bower install" ],
-    "postpublish": [ "dotnet publish-iis --publish-folder %publish:OutputPath% --framework %publish:FullTargetFramework%" ]
+    "postpublish": [
+      "dotnet publish-iis --publish-folder %publish:OutputPath% --framework %publish:FullTargetFramework%",
+      "dotnet publish ..\\TogglImporter\\ -o %publish:OutputPath%\\app_data\\jobs\\Triggered\\TogglImporter\\"
+    ]
   }
 }
