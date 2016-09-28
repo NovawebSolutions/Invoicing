@@ -117,7 +117,7 @@ namespace TransformRawData
                         Start = timeEntry.Start,
                         Stop = timeEntry.Stop,
                         Billable = timeEntry.Billable,
-                        Duration = timeEntry.Duration,
+                        Duration = timeEntry.Duration < 0 ? -1 : timeEntry.Duration,
                         Description = timeEntry.Description,
                         DurationOnly = timeEntry.DurationOnly,
                         At = timeEntry.At
