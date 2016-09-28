@@ -21,6 +21,7 @@ namespace TogglImporter
                 .AddCommandLine(args)
                 .AddJsonFile("appsettings.json")
                 .AddJsonFile("appsettings.production.json", true)
+                .AddEnvironmentVariables()
                 .Build();
 
 

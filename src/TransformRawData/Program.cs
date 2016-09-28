@@ -20,6 +20,7 @@ namespace TransformRawData
                 .AddCommandLine(args)
                 .AddJsonFile("appsettings.json")
                 .AddJsonFile("appsettings.production.json", true)
+                .AddEnvironmentVariables()
                 .Build();
 
             var storage = new CloudStorage(configuration["storageAccount"], "toggl-rawdata");
