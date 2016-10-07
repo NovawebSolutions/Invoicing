@@ -1,6 +1,7 @@
 {
   "runtimes": {
-    "win10-x64": {}
+    "win10-x64": {},
+    "win8-x86": {}
   },
   "dependencies": {
     "Microsoft.AspNetCore.Diagnostics": "1.0.0",
