@@ -50,19 +50,20 @@ namespace GenerateInvoice
             //    );
             //var entries = await _timeEntryTable.ExecuteQuerySegmentedAsync(new TableQuery<TimeEntry>().Where(monthlyTimeEntries), new TableContinuationToken());
             //var timeEntries = entries.Results;
+            var id = Guid.NewGuid();
+            var process = Process.Start("wkhtmltopdf.exe", $"invoice.html {id}.pdf");
+            process.WaitForExit(10000);
 
-            var process = Process.Start("wkhtmltopdf.exe", "invoice.html invoice.pdf");
-
-            if (File.Exists("invoice.pdf"))
+            var destinationFileName = $"{id}.pdf";
+            if (File.Exists(destinationFileName))
             {
                 var container = _blobClient.GetContainerReference("invoices");
                 await container.CreateIfNotExistsAsync();
-                var blob = container.GetBlockBlobReference("invoice.pdf");
-                await blob.UploadFromFileAsync("invoice.pdf");
+                var blob = container.GetBlockBlobReference(destinationFileName);
+                await blob.UploadFromFileAsync(destinationFileName);
             }
 
-            File.Delete("invoice.pdf");
-            process.WaitForExit(5000);
+            File.Delete(destinationFileName);
         }
 
     }
