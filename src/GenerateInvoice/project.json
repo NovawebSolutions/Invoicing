@@ -11,7 +11,12 @@
         "appsettings.json",
         "appsettings.production.json",
         "run.cmd",
-        "settings.job"
+        "settings.job",
+        "wkhtmltopdf.exe",
+        "bootstrap",
+        "font-awesome",
+        "js",
+        "invoice.html"
       ]
     }
   },
@@ -20,7 +25,12 @@
       "appsettings.json",
       "appsettings.production.json",
       "run.cmd",
-      "settings.job"
+      "settings.job",
+      "wkhtmltopdf.exe",
+      "bootstrap",
+      "font-awesome",
+      "js",
+      "invoice.html"
     ]
   },
 
