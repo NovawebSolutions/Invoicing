@@ -19,7 +19,7 @@ namespace TogglImporter
             var blobClient = storageAccount.CreateCloudBlobClient();
             _container = blobClient.GetContainerReference(containerName);
 
-            _defaultFormatting = Formatting.Indented;
+            _defaultFormatting = Formatting.None;
         }
 
         public async Task InitializeAsync()
