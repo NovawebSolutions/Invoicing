@@ -52,8 +52,12 @@ namespace GenerateInvoice
             //var timeEntries = entries.Results;
             var id = Guid.NewGuid();
             var process = Process.Start("wkhtmltopdf.exe", $"invoice.html {id}.pdf");
-            process.WaitForExit(20000);
-            process.Kill();
+            process.WaitForExit((int)TimeSpan.FromSeconds(30).TotalMilliseconds);
+
+            while (!process.HasExited)
+            {
+                await Task.Delay(TimeSpan.FromSeconds(5));
+            }
 
             var destinationFileName = $"{id}.pdf";
             if (File.Exists(destinationFileName))
